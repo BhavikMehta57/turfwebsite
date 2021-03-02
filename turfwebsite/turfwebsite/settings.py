@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '+mmhq%4=3!^kn+w!5(_g$grn)f2rg6&dku!uuqtw2be+=*b^4x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['mygrounds.herokuapp.com', '127.0.0.1']
 
