@@ -16,12 +16,21 @@
    <meta name="description" content="">
    <meta name="author" content="">	
    <!-- bootstrap css -->
-   <link rel="stylesheet" type="text/css" href=" {% static 'turf/bootstrap.min.css'%}">
+   <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
    <!-- style css -->
    <link rel="stylesheet" type="text/css" href="{% static 'turf/style.css'%}">
    <!-- Responsive-->
    <link rel="stylesheet" href="{% static 'turf/responsive.css'%}">
  
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     
    <!-- Tweaks for older IEs-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -29,44 +38,25 @@
 
    </head>
    <body>
-      {% block navbar %}
-         <!-- Navbar Code -->
-      {% endblock %}
+      {% include "./Navbar.html" %}
       <!-- Main code -->
         {% block content %}
         {% endblock %}
 
-      {% block footer %}
-      {% endblock %}
-      <script src="{% static 'turf/jquery.min.js' %}"></script>
+        {% include "./Footer.html" %}
+     
+      <!-- <script src="{% static 'turf/jquery.min.js' %}"></script>
 	 <script src="{% static 'turf/popper.min.js' %}"></script>
 	 <script src="{% static 'turf/bootstrap.bundle.min.js' %}"></script>
  
  
 	   <script src="{% static 'turf/jquery-3.0.0.min.js' %}"></script>
-	   <script src="{% static 'turf/plugin.js' %}"></script>
+	   <script src="{% static 'turf/plugin.js' %}"></script> -->
 	   <!-- sidebar -->
-	   <script src="{% static 'turf/jquery.mCustomScrollbar.concat.min.js' %}"></script>
-	   <script src="{% static 'turf/custom.js' %}"></script>
+	   <!-- <script src="{% static 'turf/jquery.mCustomScrollbar.concat.min.js' %}"></script> -->
+	   <!-- <script src="{% static 'turf/custom.js' %}"></script> -->
 	   <!-- javascript --> 
-	   <script src="{% static 'turf/owl.carousel.js' %}"></script>
-	   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-	   <script>
-		  $(document).ready(function(){
-		  $(".fancybox").fancybox({
-		  openEffect: "none",
-		  closeEffect: "none"
-		  });
-		  
-		  $(".zoom").hover(function(){
-		  
-		  $(this).addClass('transition');
-		  }, function(){
-		  
-		  $(this).removeClass('transition');
-		  });
-		  });
-		  </script> 
+	   <!-- <script src="{% static 'turf/owl.carousel.js' %}"></script> -->
    </body>
     
 </html>
